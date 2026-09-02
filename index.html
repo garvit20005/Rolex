@@ -1,0 +1,1035 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolex Watches</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navContainer">
+
+        <article class="logo">
+            <img src="./images/bxs-watch.svg.svg" alt="Watch">
+            <h3>ROLEX</h3>
+        </article>
+
+        <article class="navLinks" id="home">
+            <a href="#home">Home</a>
+            <a href="#featured">Featured</a>
+            <a href="#products">Products</a>
+            <a href="#new">New</a>
+        </article>
+        <section class="navEnd">
+
+            <img
+                src="./images/bx-sun.svg.svg"
+                alt="Sun"
+                height="20"
+            >
+
+            <img
+                src="./images/bx-shopping-bag.svg.svg"
+                alt="Shopping Bag"
+                height="20"
+                class="cartIcon"
+                onclick="toggleCart()"
+            >
+
+            <!-- MOBILE MENU TOGGLE (hamburger / grid icon) -->
+            <button class="menuToggle" onclick="toggleMenu()" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </section>
+
+    </nav>
+
+
+    <!-- ================= MOBILE NAV MENU OVERLAY ================= -->
+
+    <div class="mobileMenuOverlay" id="mobileMenuOverlay">
+
+        <button class="closeOverlay" onclick="toggleMenu()" aria-label="Close menu">&times;</button>
+
+        <div class="mobileMenuLinks">
+            <a href="#home" class="active" onclick="toggleMenu()">HOME</a>
+            <a href="#featured" onclick="toggleMenu()">FEATURED</a>
+            <a href="#products" onclick="toggleMenu()">PRODUCTS</a>
+            <a href="#new" onclick="toggleMenu()">NEW</a>
+        </div>
+
+    </div>
+
+
+    <!-- ================= CART OVERLAY ================= -->
+
+    <div class="cartOverlay" id="cartOverlay">
+
+        <div class="cartHeader">
+            <h2>My Cart</h2>
+            <button class="closeOverlay" onclick="toggleCart()" aria-label="Close cart">&times;</button>
+        </div>
+
+        <div class="cartItems">
+
+            <div class="cartItem">
+                <img src="./images/featured1 1.png" alt="Jazzmaster Watch">
+                <div class="cartItemInfo">
+                    <h4>Jazzmaster</h4>
+                    <p class="cartItemPrice">$1050</p>
+                </div>
+                <div class="cartItemQty">
+                    <button class="qtyBtn">&minus;</button>
+                    <span>1</span>
+                    <button class="qtyBtn">&plus;</button>
+                </div>
+                <button class="deleteBtn" aria-label="Remove item">
+                    <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6 7h12l-1 14H7L6 7zm3-4h6l1 2h4v2H2V5h4l1-2z"/></svg>
+                </button>
+            </div>
+
+            <div class="cartItem">
+                <img src="./images/featured3.png" alt="Rose Gold Watch">
+                <div class="cartItemInfo">
+                    <h4>Rose Gold</h4>
+                    <p class="cartItemPrice">$850</p>
+                </div>
+                <div class="cartItemQty">
+                    <button class="qtyBtn">&minus;</button>
+                    <span>1</span>
+                    <button class="qtyBtn">&plus;</button>
+                </div>
+                <button class="deleteBtn" aria-label="Remove item">
+                    <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6 7h12l-1 14H7L6 7zm3-4h6l1 2h4v2H2V5h4l1-2z"/></svg>
+                </button>
+            </div>
+
+            <div class="cartItem">
+                <img src="./images/new1.png" alt="Longines Rose Watch">
+                <div class="cartItemInfo">
+                    <h4>Longines Rose</h4>
+                    <p class="cartItemPrice">$980</p>
+                </div>
+                <div class="cartItemQty">
+                    <button class="qtyBtn">&minus;</button>
+                    <span>1</span>
+                    <button class="qtyBtn">&plus;</button>
+                </div>
+                <button class="deleteBtn" aria-label="Remove item">
+                    <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6 7h12l-1 14H7L6 7zm3-4h6l1 2h4v2H2V5h4l1-2z"/></svg>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="cartFooter">
+            <span>3 items</span>
+            <span class="cartTotal">$2880</span>
+        </div>
+
+    </div>
+    <!-- ================= HOME ================= -->
+
+    <header class="homeContainer">
+
+        <article class="homeContainer1">
+
+            <div class="social-sidebar">
+
+                <a href="#" class="social-link">
+                    Instagram
+                </a>
+
+                <a href="#" class="social-link">
+                    Twitter
+                </a>
+
+                <a href="#" class="social-link">
+                    Facebook
+                </a>
+
+            </div>
+
+
+            <h1>NEW WATCH</h1>
+
+            <h1>COLLECTIONS B720</h1>
+
+
+            <p>
+                Latest arrival of new imported watches of the B720
+                series, with a modern and resistent design
+            </p>
+
+
+            <h2>$1245</h2>
+
+
+            <div class="homebtn12">
+
+                <button class="homebtn1">
+                    Discover
+                </button>
+
+                <button class="homebtn2">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <img
+            src="./images/Home img.png"
+            alt="Watch Collection"
+        >
+
+    </header>
+
+
+    <!-- ================= FEATURED ================= -->
+
+    <header class="featuredMainContainer" id="featured">
+
+        <div class="section-heading">
+
+            <span class="heading-line"></span>
+
+            <h2 id>FEATURED</h2>
+
+        </div>
+
+
+        <header class="featuredContainer">
+
+
+            <!-- FEATURED CARD 1 -->
+
+            <div class="product-card">
+
+                <div class="sale-badge">
+                    SALE
+                </div>
+
+                <div class="watch-image">
+
+                    <img
+                        src="./images/featured1 1.png"
+                        alt="Jazzmaster Watch"
+                    >
+
+                </div>
+
+                <h3 class="product-title">
+                    JAZZMASTER
+                </h3>
+
+                <p class="product-price">
+                    $1050
+                </p>
+
+                <div class="cart-wrapper">
+
+                    <button class="add-to-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- FEATURED CARD 2 -->
+
+            <div class="product-card">
+
+                <div class="sale-badge">
+                    SALE
+                </div>
+
+                <div class="watch-image">
+
+                    <img
+                        src="./images/featured2.png"
+                        alt="Ingersoll Watch"
+                    >
+
+                </div>
+
+                <h3 class="product-title">
+                    INGERSOLL
+                </h3>
+
+                <p class="product-price">
+                    $250
+                </p>
+
+                <div class="cart-wrapper">
+
+                    <button class="add-to-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- FEATURED CARD 3 -->
+
+            <div class="product-card">
+
+                <div class="sale-badge">
+                    SALE
+                </div>
+
+                <div class="watch-image">
+
+                    <img
+                        src="./images/featured3.png"
+                        alt="Rose Gold Watch"
+                    >
+
+                </div>
+
+                <h3 class="product-title">
+                    ROSE GOLD
+                </h3>
+
+                <p class="product-price">
+                    $890
+                </p>
+
+                <div class="cart-wrapper">
+
+                    <button class="add-to-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+    </header>
+
+
+    <!-- ================= OUR STORY ================= -->
+
+    <header class="storyContainer">
+
+        <div class="image-container">
+
+            <div class="peach-box"></div>
+
+            <div class="watch-box">
+
+                <img
+                    src="./images/story 1.png"
+                    alt="Watch"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="storyContainer1">
+
+            <div class="section-heading1">
+
+                <span class="heading-line"></span>
+
+                <h2>OUR STORY</h2>
+
+            </div>
+
+
+            <p id="storyPara1">
+                Inspirational watch of this year
+            </p>
+
+
+            <p id="storyPara2">
+                The latest and modern watches of this year,
+                is available in various presentations in this
+                store, discover them now.
+            </p>
+
+
+            <button>
+                Discover
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <article class="productsContainer" id="products">
+
+        <div class="section-heading">
+
+            <span class="heading-line"></span>
+
+            <h2>PRODUCTS</h2>
+
+        </div>
+
+
+        <div class="productsContainer1">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card1">
+
+                <div class="watch-image">
+
+                    <img
+                        src="./images/product1.png"
+                        alt="Spirit Rose"
+                    >
+
+                </div>
+
+                <h3 class="product-title">
+                    SPIRIT ROSE
+                </h3>
+
+                <p class="product-price">
+                    $1500
+                </p>
+
+                <div class="productBag">
+
+                    <img
+                        src="./images/Button product.svg"
+                        alt="Shopping Bag"
+                    >
+
+                </div>
+
+                <div class="cart-wrapper">
+
+                    <button class="add-to-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card1">
+
+                <div class="watch-image">
+
+                    <img
+                        src="./images/product2.png"
+                        alt="Khaki Pilot"
+                    >
+
+                </div>
+
+                <h3 class="product-title">
+                    KHAKI PILOT
+                </h3>
+
+                <p class="product-price">
+                    $1350
+                </p>
+
+                <div class="productBag">
+
+                    <img
+                        src="./images/Button product.svg"
+                        alt="Shopping Bag"
+                    >
+
+                </div>
+
+                <div class="cart-wrapper">
+
+                    <button class="add-to-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card1">
+
+                <div class="watch-image">
+
+                    <img
+                        src="./images/product3.png"
+                        alt="Jubilee Black"
+                    >
+
+                </div>
+
+                <h3 class="product-title">
+                    JUBILEE BLACK
+                </h3>
+
+                <p class="product-price">
+                    $870
+                </p>
+
+                <div class="productBag">
+
+                    <img
+                        src="./images/Button product.svg"
+                        alt="Shopping Bag"
+                    >
+
+                </div>
+
+                <div class="cart-wrapper">
+
+                    <button class="add-to-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card1">
+
+                <div class="watch-image">
+
+                    <img
+                        src="./images/product4 1.png"
+                        alt="Fosil Me3"
+                    >
+
+                </div>
+
+                <h3 class="product-title">
+                    FOSIL ME3
+                </h3>
+
+                <p class="product-price">
+                    $650
+                </p>
+
+                <div class="productBag">
+
+                    <img
+                        src="./images/Button product.svg"
+                        alt="Shopping Bag"
+                    >
+
+                </div>
+
+                <div class="cart-wrapper">
+
+                    <button class="add-to-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 5 -->
+
+            <div class="product-card1">
+
+                <div class="watch-image">
+
+                    <img
+                        src="./images/product5 1.png"
+                        alt="Duchen"
+                    >
+
+                </div>
+
+                <h3 class="product-title">
+                    DUCHEN
+                </h3>
+
+                <p class="product-price">
+                    $950
+                </p>
+
+                <div class="productBag">
+
+                    <img
+                        src="./images/Button product.svg"
+                        alt="Shopping Bag"
+                    >
+
+                </div>
+
+                <div class="cart-wrapper">
+
+                    <button class="add-to-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- ================= TESTIMONIAL ================= -->
+
+    <header class="productsContainer2">
+
+        <article class="productsContainer21">
+
+            <img
+                src="./images/Group 1.svg"
+                alt=""
+                class="img1"
+            >
+
+            <p>
+                They are the best watches that one acquires,
+                also they are always with the latest news and
+                trends, with a very comfortable price and
+                especially the attention you receive, they are
+                always attentive to your questions
+            </p>
+
+            <h4>
+                March 27.2021
+            </h4>
+
+            <div class="testimonialAuthor">
+
+                <img
+                    src="./images/Perfil testimonial.svg"
+                    alt=""
+                    class="img2"
+                >
+
+                <div class="testimonialAuthorInfo">
+                    <h5>Lee Doe</h5>
+                    <span>Director of a company</span>
+                </div>
+
+            </div>
+
+            <div class="img34">
+
+                <img
+                    src="./images/Arrow left testimonial.svg"
+                    alt=""
+                    class="img3"
+                >
+
+                <img
+                    src="./images/Arrow right testimonial.svg"
+                    alt=""
+                    class="img4"
+                >
+
+            </div>
+
+        </article>
+
+
+        <div class="image-container1">
+
+            <div class="watch-box1">
+
+                <img
+                    src="./images/testimonial.png"
+                    alt="Watch"
+                >
+
+            </div>
+
+            <div class="peach-box1"></div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= NEW ARRIVALS ================= -->
+
+    <header class="arrivalsContainer" id="new">
+
+        <div class="section-heading">
+
+            <span class="heading-line"></span>
+
+            <h2>NEW ARRIVALS</h2>
+
+        </div>
+
+
+        <div class="arrivalsContainer1">
+
+
+            <!-- NEW ARRIVAL 1 -->
+
+            <div class="product-card1 arrival-card">
+
+                <div class="new-badge">
+                    NEW
+                </div>
+
+                <div class="watch-image">
+
+                    <img
+                        src="./images/new1.png"
+                        alt="Longines Rose"
+                    >
+
+                </div>
+
+                <h3 class="product-title">
+                    LONGINES ROSE
+                </h3>
+
+                <p class="product-price">
+                    $980
+                </p>
+
+                <div class="cart-wrapper">
+
+                    <button class="add-to-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- NEW ARRIVAL 2 -->
+
+            <div class="product-card1 arrival-card">
+
+                <div class="new-badge">
+                    NEW
+                </div>
+
+                <div class="watch-image">
+
+                    <img
+                        src="./images/new2.png"
+                        alt="Jazzmaster"
+                    >
+
+                </div>
+
+                <h3 class="product-title">
+                    JAZZMASTER
+                </h3>
+
+                <p class="product-price">
+                    $1150
+                </p>
+
+                <div class="cart-wrapper">
+
+                    <button class="add-to-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- NEW ARRIVAL 3 -->
+
+            <div class="product-card1 arrival-card">
+
+                <div class="new-badge">
+                    NEW
+                </div>
+
+                <div class="watch-image">
+
+                    <img
+                        src="./images/new3.png"
+                        alt="Dreyfus Gold"
+                    >
+
+                </div>
+
+                <h3 class="product-title">
+                    DREYFUS GOLD
+                </h3>
+
+                <p class="product-price">
+                    $750
+                </p>
+
+                <div class="cart-wrapper">
+
+                    <button class="add-to-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- NEW ARRIVAL 4 -->
+
+            <div class="product-card1 arrival-card">
+
+                <div class="new-badge">
+                    NEW
+                </div>
+
+                <div class="watch-image">
+
+                    <img
+                        src="./images/new4.png"
+                        alt="Portuguese Rose"
+                    >
+
+                </div>
+
+                <h3 class="product-title">
+                    PORTUGUESE ROSE
+                </h3>
+
+                <p class="product-price">
+                    $1590
+                </p>
+
+                <div class="cart-wrapper">
+
+                    <button class="add-to-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= SUBSCRIBE ================= -->
+
+    <section class="subscribeContainer">
+
+        <article class="subscribeContainer1">
+
+            <h1 class="subscribeContainerHead1">
+                Subscribe Our
+            </h1>
+
+            <h1 class="subscribeContainerHead2">
+                Newsletter
+            </h1>
+
+            <p>
+                Don't miss out on our discounts. Subscribe to our
+                email newsletter to get the best offers, discounts,
+                coupons, gifts and much more
+            </p>
+
+        </article>
+
+
+        <article class="subscribeContainer2">
+
+            <div class="subscribeContainer21">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                >
+
+                <button>
+                    SUBSCRIBE
+                </button>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footerContainer">
+
+        <div class="footerContainer1">
+
+
+            <!-- OUR INFORMATION -->
+
+            <div class="footerInfo">
+
+                <h3>
+                    Our information
+                </h3>
+
+                <p>
+                    1234 - Peru
+                </p>
+
+                <p>
+                    La Libertad 43210
+                </p>
+
+                <p>
+                    123-456-789
+                </p>
+
+            </div>
+
+
+            <!-- ABOUT US -->
+
+            <div class="footerAbout">
+
+                <h3>
+                    About Us
+                </h3>
+
+                <p>
+                    Support Center
+                </p>
+
+                <p>
+                    Customer Support
+                </p>
+
+                <p>
+                    About Us
+                </p>
+
+                <p>
+                    Copy Right
+                </p>
+
+            </div>
+
+
+            <!-- PRODUCT -->
+
+            <div class="footerProduct">
+
+                <h3>
+                    Product
+                </h3>
+
+                <p>
+                    Road bikes
+                </p>
+
+                <p>
+                    Mountain bikes
+                </p>
+
+                <p>
+                    Electric
+                </p>
+
+                <p>
+                    Accesories
+                </p>
+
+            </div>
+
+
+            <!-- SOCIAL -->
+
+            <div class="footerSocial">
+
+                <h3>
+                    Social
+                </h3>
+
+                <div class="footerSocialIcons">
+
+                    <a href="#">
+                        <img
+                            src="./images/bxl-facebook.svg.svg"
+                            alt="Facebook"
+                        >
+                    </a>
+
+                    <a href="#">
+                        <img
+                            src="./images/bxl-twitter.svg.svg"
+                            alt="Twitter"
+                        >
+                    </a>
+
+                    <a href="#">
+                        <img
+                            src="./images/bxl-instagram.svg.svg"
+                            alt="Instagram"
+                        >
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footerLine"></div>
+
+
+        <p class="copyright">
+            © Bedimcode. All rights reserved
+        </p>
+
+    </footer>
+
+
+    <!-- BACK TO TOP -->
+    <a href="#home" class="backToTop" aria-label="Back to top">&uarr;</a>
+
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('mobileMenuOverlay').classList.toggle('active');
+            document.body.classList.toggle('noScroll');
+        }
+
+        function toggleCart() {
+            document.getElementById('cartOverlay').classList.toggle('active');
+            document.body.classList.toggle('noScroll');
+        }
+    </script>
+
+</body>
+
+</html>
